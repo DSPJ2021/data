@@ -11,7 +11,7 @@ awk -F',' '{print $2,$3,$4,$5,$6,$7,$8}' $1 | sort -u > data.csv #to import more
 #
 awk -F" " '{ print > $1 ".csv" }' data.csv
 
-rm $1 data_july.csv
+rm $1 #data_july.csv
 mv sensor_id.csv legende.txt
 
 

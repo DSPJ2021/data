@@ -1,0 +1,7 @@
+# python-related
+venv/
+build/
+env/
+
+# IDE-related
+.idea/
