@@ -6,7 +6,7 @@
 CSV=$1
 
 # delete first column (id), sort by 2nd
-awk -F',' '{print $2,$3,$4,$5,$6,$7,$8}' $1 | sort -u > data.csv #to import more dates: > -> >>
+awk -F',' '{print $2,$3,$4,$5,$6,$7,$8,$9}' $1 | sort -u > data.csv #to import more dates: > -> >>
 
 #
 awk -F" " '{ print > $1 ".csv" }' data.csv
